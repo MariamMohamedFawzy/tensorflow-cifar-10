@@ -20,7 +20,7 @@ epoch_start = 0
 # PARAMS
 _BATCH_SIZE = 128
 _EPOCH = 10
-_SAVE_PATH = "./tensorboard/cifar-10-v1.0.0/"
+_SAVE_PATH = "./tensorboard/cifar-10/"
 
 
 # LOSS AND OPTIMIZER
