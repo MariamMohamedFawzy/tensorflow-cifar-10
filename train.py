@@ -1,5 +1,6 @@
 import numpy as np
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 from time import time
 import math
 
@@ -18,7 +19,7 @@ epoch_start = 0
 
 # PARAMS
 _BATCH_SIZE = 128
-_EPOCH = 60
+_EPOCH = 10
 _SAVE_PATH = "./tensorboard/cifar-10-v1.0.0/"
 
 
