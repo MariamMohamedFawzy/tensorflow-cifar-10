@@ -128,10 +128,10 @@ def test_and_save(_global_step, epoch):
 
 def main():
     train_start = time()
-
-    for i in range(_EPOCH):
-        print("\nEpoch: {}/{}\n".format((i+1), _EPOCH))
-        train(i)
+    with tf.device('/device:GPU:0'):
+        for i in range(_EPOCH):
+            print("\nEpoch: {}/{}\n".format((i+1), _EPOCH))
+            train(i)
 
     hours, rem = divmod(time() - train_start, 3600)
     minutes, seconds = divmod(rem, 60)
