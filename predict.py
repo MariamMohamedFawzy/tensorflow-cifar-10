@@ -12,7 +12,7 @@ x, y, output, y_pred_cls, global_step, learning_rate = model()
 
 _BATCH_SIZE = 128
 _CLASS_SIZE = 10
-_SAVE_PATH = "./tensorboard/cifar-10-v1.0.0/"
+_SAVE_PATH = "./tensorboard/cifar-10/"
 
 
 saver = tf.train.Saver()
