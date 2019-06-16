@@ -103,7 +103,7 @@ python3 predict.py
 Simple output:
 ```sh
 Trying to restore last checkpoint ...
-Restored checkpoint from: ./tensorboard/cifar-10-v1.0.0/-23460
+Restored checkpoint from: ./tensorboard/cifar-10/-23460
 
 Accuracy on Test-Set: 78.81% (7881 / 10000)
 ```
